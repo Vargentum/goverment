@@ -111,4 +111,24 @@ $(function(){
     /*selectbox init*/
     $('select').selectBox();
 
+
+//    AJAX
+    function ajaxRequest(url, dataObject){
+        $.ajax({
+            url: url,
+            data: dataObject,
+            success:function(dataObject){
+
+            }
+        });
+    }
+    $('.ajax-organisation').click(function(){
+        ajaxRequest();
+    });
+    $('.ajax-blanksAll').click(function(){
+        ajaxRequest();
+    });
+    $('.ajax-gallery').click(function(){
+        ajaxRequest();
+    });
 });
