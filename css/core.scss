@@ -547,7 +547,7 @@ DEVELOPER STYLES RUN BELOW THIS POINT
       top:0;
       height: 100%;
       right: 100%;
-      width: 50px;
+      width: 40px;
       background-color: #ececec;
     }
     &:after{
@@ -630,7 +630,7 @@ body {
   width: -webkit-calc(100% - 383px);
   width: -moz-calc(100% - 383px);
   width: calc(100% - 383px);
-  padding: 20px 25px 20px 50px;
+  padding: 20px 25px 20px 40px;
 }
 .l-footer {
   min-width: $baseMinWidth;
@@ -808,16 +808,14 @@ body {
 -----------------------------------------------------------------------------------------------*/
 .b-footer__bnrs{
   background-color: #fff;
-  padding: 20px 0;
+  padding-top: 20px;
   box-shadow: 0 -2px 4px rgba(0,0,0,.25);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .b-footer__bnrs__unit{
   width: 32%;
   @include respond-to(screen1360){ width: 31%; }
-  position: relative;
-  z-index: 2;
   border:2px solid #dad8d3;
   background-color: #fff;
   @include border-radius(15px);
@@ -865,16 +863,18 @@ body {
 
 .l-footer {
   @extend .footer-bg;
-  margin-top: 90px;
+  margin-top: 110px;
   padding-top: 35px;
   position: relative;
   z-index: 1;
 }
 .l-footer__content {
   padding-bottom: 30px;
-  &>ul{@extend .l-fLine-full;}
+  &>ul{
+    @extend .l-fLine-full;
+    &>li{min-width: 300px;}
+  }
 }
-.l-footer__cotnent__left{min-width: 300px;}
 .pageFooter__sitySiluet__ie7{
   position: absolute;
   width:1214px;
@@ -1315,6 +1315,7 @@ body {
 /*INNER pages elements--------------------------------*/
 .b-asideLeft__nav{
   &:first-child{margin-bottom: 40px;}
+  ul:first-child{font-family: $baseFontFamily-semibold;}
   li{
     font-size: 14px;
     padding: 7px 10px 9px;
@@ -1494,9 +1495,15 @@ body {
       border-right: 15px solid transparent;
     }
   }
-  &.m-uppercased{
+  &.m-anotherStyling {
+    font-family: $baseFontFamily-semibold;
     text-transform: uppercase;
-
+    background-color: #e0a763;
+    .h-vCtr{
+      width: inherit;
+      text-align: center;
+    }
+    &:after{display: block;}
   }
 }
 
