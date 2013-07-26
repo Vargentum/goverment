@@ -971,9 +971,9 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 
 .b-gallery__title { font: 22px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; color: #1a1a18; margin-bottom: 15px; }
 
-.b-gallery__list { margin: 10px 0 10px -15px; }
+.b-gallery__list { margin: 10px 0; margin-left: -15px; }
 
-.b-gallery__list__unit { padding: 7px 7px 5px; background-color: #fff; box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75); margin: 0 0 15px 15px; }
+.b-gallery__list__unit { padding: 7px 7px 5px; background-color: #fff; box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75); margin: 0 0 15px 10px; }
 .b-gallery__list__unit a, .b-gallery__list__unit a > img { width: 140px; height: 95px; }
 
 /*ICONS--------------------------------*/

@@ -113,7 +113,7 @@ $(function(){
 
 
 //    AJAX
-    function ajaxRequest(url, dataObject){
+/*    function ajaxRequest(url, dataObject){
         $.ajax({
             url: url,
             data: dataObject,
@@ -130,5 +130,5 @@ $(function(){
     });
     $('.ajax-gallery').click(function(){
         ajaxRequest();
-    });
+    });*/
 });

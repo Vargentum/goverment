@@ -1581,13 +1581,14 @@ body {
 }
 .b-gallery__list{
   @extend .l-hLine-top;
-  margin: 10px 0 10px -15px;
+  margin: 10px 0;
+  margin-left: -15px;
 }
 .b-gallery__list__unit{
   padding: 7px 7px 5px;
   background-color: #fff;
   box-shadow: 1px 2px 2px rgba(0,0,0,.75);
-  margin: 0 0 15px 15px;
+  margin: 0 0 15px 10px;
   a{@include img-container(140px,95px);}
 }
 
