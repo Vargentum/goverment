@@ -95,21 +95,9 @@ $(function(){
         }
     });
 
-    /*yandex map*/
-    ymaps.ready(mapInit);
-
-    function mapInit(){
-        var mapCoords = [59.958448,30.309691];
-        var map = new ymaps.Map('map',{
-            center: mapCoords,
-            zoom: 10
-        });
-        var placemark = new ymaps.Placemark(mapCoords);
-        map.geoObjects.add(placemark);
-    }
-
     /*selectbox init*/
     $('select').selectBox();
+
 
 
 //    AJAX
@@ -131,4 +119,21 @@ $(function(){
     $('.ajax-gallery').click(function(){
         ajaxRequest();
     });*/
+
+
+
+
+    /*yandex map*/
+    ymaps.ready(mapInit);
+
+    function mapInit(){
+        var mapCoords = [59.958448,30.309691];
+        var map = new ymaps.Map('map',{
+            center: mapCoords,
+            zoom: 10
+        });
+        var placemark = new ymaps.Placemark(mapCoords);
+        map.geoObjects.add(placemark);
+    }
 });
+

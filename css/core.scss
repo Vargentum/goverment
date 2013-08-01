@@ -614,19 +614,21 @@ body {
 
   }
 }
-.l-content__mainColumn--2ColumnedLayout{
+.l-content__mainColumn{
   background-color: #faf7f3;
   @include border-radius;
   border: 3px solid #dad8d3;
+  padding: 20px 80px 20px 40px;
+}
+.l-content__mainColumn--2ColumnedLayout{
+  @extend .l-content__mainColumn;
   width: 750px;
   width: -webkit-calc(100% - 200px);
   width: -moz-calc(100% - 200px);
   width: calc(100% - 200px);
-  padding: 20px 80px 20px 40px;
 }
 .l-content__mainColumn--3ColumnedLayout{
-  background-color: #faf7f3;
-  border:1px solid #dad8d3;
+  @extend .l-content__mainColumn;
   width: -webkit-calc(100% - 383px);
   width: -moz-calc(100% - 383px);
   width: calc(100% - 383px);
