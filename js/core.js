@@ -20,22 +20,35 @@ if (!(window.console && console.log)) {
 $(window).load(function(){
     var paddingForLeftColumn = $('.b-crumbs').height() + 46;
     var paddingForRightColumn = $('.b-pageTitle').height() + paddingForLeftColumn;
-    var pageContentHeight = $('.l-content--innerPages').height() + paddingForLeftColumn;
+    var paddingForRightColumn = $('.b-pageTitle').height() + paddingForLeftColumn;
 
-    $('.l-content__aside--left').css('padding-top', paddingForLeftColumn);
-    $('.l-content__aside--right').css({
-        height: pageContentHeight,
-        paddingTop: paddingForRightColumn
+    $('.l-content__aside--left').css('paddingTop', paddingForLeftColumn);
+    $('.l-content__aside--right').css('paddingTop', paddingForRightColumn);
+
+    function equalizeLayoutColumnsHeights(height){
+        var $mainColumn = $('.l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout');
+        $mainColumn.css('height', height);
+    }
+    var mainAreaHeight = $('.l-content--innerPages').height() + paddingForLeftColumn;
+    equalizeLayoutColumnsHeights(mainAreaHeight);
+
+    $(window).resize(function(){
+        if( $(window).width() > 1300 ){
+            mainAreaHeight = 'auto';
+            equalizeLayoutColumnsHeights(mainAreaHeight);
+            equalize(mainAreaHeight);
+        }
     });
-    $('.l-content__mainColumn--3ColumnedLayout, .l-content__mainColumn--2ColumnedLayout').css('height', pageContentHeight);
+
+
+
     /*set color to all inputs*/
     $('input').parent().addClass('placeholder-colors-base');
     /*columns equalize*/
-    function equalize($node){
-        var height = $node.height();
+    function equalize(height){
         $node.children().css('height',height);
     }
-    equalize($('.js-equalize'));
+    equalize($('.js-equalize').height());
     /*hide half of news on 1024*/
     function calcNeedHeight(){
         return $('.b-index__news__list__unit:nth-child(1)').height() + $('.b-index__news__list__unit:nth-child(2)').height() + $('.b-index__news__list__unit:nth-child(3)').height();
