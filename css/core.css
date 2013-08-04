@@ -496,6 +496,8 @@ input[type="radio"], input[type="checkbox"] { margin: 4px 0 0; margin-top: 1px \
 
 input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] { width: auto; }
 
+input[type="submit"] { border: none !important; }
+
 select, input[type="file"] { *margin-top: 4px; /* In IE7, the height of the select element cannot be changed by height, only font-size */ }
 
 select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: thin dotted #333; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
@@ -624,13 +626,13 @@ body { height: 100%; font-size: 16px; line-height: 1.4; }
 
 .l-content__aside--left { width: 180px; padding-bottom: 60px; }
 
-.l-content__aside--right { position: absolute; right: 0; top: 0; width: 200px; background-color: #dad8d3; }
+.l-content__aside--right { width: 200px; background-color: #dad8d3; }
 
 .l-content__mainColumn, .l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout { background-color: #faf7f3; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; border: 3px solid #dad8d3; padding: 20px 80px 20px 40px; }
 
 .l-content__mainColumn--2ColumnedLayout { width: 750px; width: -webkit-calc(100% - 200px); width: -moz-calc(100% - 200px); width: calc(100% - 200px); }
 
-.l-content__mainColumn--3ColumnedLayout { width: 740px; width: -webkit-calc(100% - 183px); width: -moz-calc(100% - 183px); width: calc(100% - 183px); padding: 20px 25px 20px 40px; border-right: 200px solid #dad8d3; }
+.l-content__mainColumn--3ColumnedLayout { width: 740px; width: -webkit-calc(100% - 383px); width: -moz-calc(100% - 383px); width: calc(100% - 383px); padding: 20px 25px 20px 40px; }
 
 .l-footer { min-width: 940px; }
 

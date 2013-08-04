@@ -326,6 +326,7 @@ input[type="checkbox"] {
 
 input[type="submit"]{
   @extend .default-button;
+  border: none !important;
 }
 
 select,
@@ -615,9 +616,6 @@ body {
   padding-bottom: 60px;
 }
 .l-content__aside--right{
-  position: absolute;
-  right: 0;
-  top:0;
   width: 200px;
   background-color: #dad8d3;
   &:before{
@@ -641,11 +639,10 @@ body {
 .l-content__mainColumn--3ColumnedLayout{
   @extend .l-content__mainColumn;
   width: 740px;
-  width: -webkit-calc(100% - 183px);
-  width: -moz-calc(100% - 183px);
-  width: calc(100% - 183px);
+  width: -webkit-calc(100% - 383px);
+  width: -moz-calc(100% - 383px);
+  width: calc(100% - 383px);
   padding: 20px 25px 20px 40px;
-  border-right: 200px solid #dad8d3;
 }
 .l-footer {
   min-width: $baseMinWidth;
