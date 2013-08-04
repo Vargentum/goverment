@@ -45,10 +45,10 @@ $(window).load(function(){
     /*set color to all inputs*/
     $('input').parent().addClass('placeholder-colors-base');
     /*columns equalize*/
-    function equalize(height){
-        $node.children().css('height',height);
+    function equalize($node){
+        $node.children().css('height',$node.height());
     }
-    equalize($('.js-equalize').height());
+    equalize($('.js-equalize'));
     /*hide half of news on 1024*/
     function calcNeedHeight(){
         return $('.b-index__news__list__unit:nth-child(1)').height() + $('.b-index__news__list__unit:nth-child(2)').height() + $('.b-index__news__list__unit:nth-child(3)').height();

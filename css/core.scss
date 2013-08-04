@@ -530,7 +530,7 @@ DEVELOPER STYLES RUN BELOW THIS POINT
 @for $i from 1 through 3{
   .service-icon-#{$i}{
     @extend .service-icon;
-    &:before{background-image: inline-image('service-icon-#{$i}.png')}
+    &:before{background-image: url('../img/service-icon-#{$i}.png')}
   }
 }
 
@@ -542,7 +542,7 @@ DEVELOPER STYLES RUN BELOW THIS POINT
 @for $i from 1 through 3{
   .icon-service-#{$i}{
     @extend .icon-service;
-    background-image: inline-image('service-icon-#{$i}.png');
+    background-image: url('../img/service-icon-#{$i}.png');
   }
 }
 
@@ -640,6 +640,7 @@ body {
 }
 .l-content__mainColumn--3ColumnedLayout{
   @extend .l-content__mainColumn;
+  width: 740px;
   width: -webkit-calc(100% - 183px);
   width: -moz-calc(100% - 183px);
   width: calc(100% - 183px);
@@ -877,7 +878,7 @@ body {
 
 .l-footer {
   @extend .footer-bg;
-  margin-top: 110px;
+  margin-top: 160px;
   padding-top: 35px;
   position: relative;
   z-index: 1;
@@ -998,6 +999,7 @@ body {
 -----------------------------------------------------------------------------------------------*/
 .b-primeNav{
   position: relative;
+  min-width: $baseMinWidth;
   @extend .footer-bg;
   &:before{
     @extend .pseudo-block;
@@ -1200,7 +1202,7 @@ body {
   }
   .unit__title{margin:6px 0 3px; font-weight: normal;}
   .unit__link{
-    &:after{content: ' »';}
+    &:after{content: ' >>';}
   }
   .viewAll_link{
     display: block;
@@ -1617,24 +1619,24 @@ i{
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.icon-reg{background-image: inline-image('icon-reg.png');}
-.icon-pension{background-image: inline-image('icon-pension.png');}
-.icon-soc_family{background-image: inline-image('icon-soc_family.png');}
-.icon-soc_benefits{background-image: inline-image('icon-soc_benefits.png');}
-.icon-housing{background-image: inline-image('icon-housing.png');}
-.icon-job{background-image: inline-image('icon-job.png');}
-.icon-tax{background-image: inline-image('icon-tax.png');}
-.icon-edu{background-image: inline-image('icon-edu.png');}
-.icon-arch{background-image: inline-image('icon-arch.png');}
-.icon-prop{background-image: inline-image('icon-prop.png');}
-.icon-safety{background-image: inline-image('icon-safety.png');}
-.icon-health{background-image: inline-image('icon-health.png');}
-.icon-culture{background-image: inline-image('icon-culture.png');}
-.icon-rights{background-image: inline-image('icon-rights.png');}
-.icon-eco{background-image: inline-image('icon-eco.png');}
-.icon-enterprise{background-image: inline-image('icon-enterprise.png');}
-.icon-transport{background-image: inline-image('icon-transport.png');}
-.icon-other{background-image: inline-image('icon-other.png');}
+.icon-reg{background-image: url('../img/icon-reg.png');}
+.icon-pension{background-image: url('../img/icon-pension.png');}
+.icon-soc_family{background-image: url('../img/icon-soc_family.png');}
+.icon-soc_benefits{background-image: url('../img/icon-soc_benefits.png');}
+.icon-housing{background-image: url('../img/icon-housing.png');}
+.icon-job{background-image: url('../img/icon-job.png');}
+.icon-tax{background-image: url('../img/icon-tax.png');}
+.icon-edu{background-image: url('../img/icon-edu.png');}
+.icon-arch{background-image: url('../img/icon-arch.png');}
+.icon-prop{background-image: url('../img/icon-prop.png');}
+.icon-safety{background-image: url('../img/icon-safety.png');}
+.icon-health{background-image: url('../img/icon-health.png');}
+.icon-culture{background-image: url('../img/icon-culture.png');}
+.icon-rights{background-image: url('../img/icon-rights.png');}
+.icon-eco{background-image: url('../img/icon-eco.png');}
+.icon-enterprise{background-image: url('../img/icon-enterprise.png');}
+.icon-transport{background-image: url('../img/icon-transport.png');}
+.icon-other{background-image: url('../img/icon-other.png');}
 
 .m-top5{
   position: relative;
