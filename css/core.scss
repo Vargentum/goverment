@@ -26,18 +26,13 @@
 @import "sprites/pageHeader__service/*.png";
 
 *,*:before,*:after,input[type=search]{@include box-sizing(border-box);}//border-box-sizing for all elems
-/*===============================================================
- FONT FACE
-===============================================================*/
-@each $font-face in
-  fontName{
-  @font-face {
-    font-family: $font-face; font-style: normal; font-weight: normal;
-    src: url('../fonts/#{$font-face}.eot');
-    src: url('../fonts/#{$font-face}.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/#{$font-face}.woff') format('woff'),
-    url('../fonts/#{$font-face}.ttf')  format('truetype');
-  }
+
+/* hack for safari 5.1.7
+*/
+
+@font-face {
+  font-family: 'inline-block';
+  src: url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAREAA8AAAAABjAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABWAAAABwAAAAcZhKVeUdERUYAAAF0AAAAHAAAACAAMgAET1MvMgAAAZAAAABDAAAAYG8LT11jbWFwAAAB1AAAAE0AAAFawBQnGWN2dCAAAAIkAAAABAAAAAQARAURZ2FzcAAAAigAAAAIAAAACAAAABBnbHlmAAACMAAAAGEAAABoJ54Dp2hlYWQAAAKUAAAALgAAADb7cuTdaGhlYQAAAsQAAAAdAAAAJAgAB95obXR4AAAC5AAAABQAAAAUFuwARGxvY2EAAAL4AAAADAAAAAwAWACMbWF4cAAAAwQAAAAfAAAAIABJADluYW1lAAADJAAAAOMAAAHgJGtDI3Bvc3QAAAQIAAAAMQAAAEPCf+Zpd2ViZgAABDwAAAAGAAAABpymUMgAAAABAAAAAMw9os8AAAAAzOalhQAAAADM7k0keNpjYGRgYOADYgkGEGBiYARCFjAG8RgABHYAN3jaY2BmY2CcwMDKwMJqzHKWgYFhFoRmOsuQxpQG5AOl4ICRAQmEeof7MTgw8D5gYEv7B1TJOotBA02NAgMjABIYCh4AeNpjYGBgZoBgGQZGBhAIAfIYwXwWBgsgzcXAwcAEhAwMvAwKDxj+/wergrEZ/3/9/1iBBaoXChjZGOACjCCdTAyogBFi5XAGAHUwCw0AAAAARAURAAEAAf//AA942mNgYnBhYGBKYQ1lYGZgZ9DbyMigb7OJnYXhrdFGNtY7NpuYmYBMho3MIGFWkPAmdjbGPzabGEHixoKKgqqKgoouTAr/VBhn/MtgDf212oXlLAMDAyMDEjBkAACuEhZiAAAAeNpjYGRgYGBkcJSTmSUez2/zlUGegwEEzrzzVUWmmVJYQ4EUBwMTiAcA8dIIFwAAeNpjYGRgYJ31/wYDAwcDCDClMDAyoAJWAFJhAuwAAAAC7ABECAAAAAgAAAAAAAAABAAAAAAAACwALAAsACwANHjaY2BkYGBgZeBgYGIAARDJyAASc2DQAwkAAAScAIMAeNqljs1OwkAUhb8RMLAxxgVL06UbSFsk/CWsCBsTQjTK2lZUAkLCnz4ivApPwWE61NitaebOd86993SAEktymHwJwzU4vuBKKuEc99w6zuPx6LjAT7p7qYmD4xs8U3S8o2zuHO/xTZc5Y76V0mchXittzAcbZrwqLaCKry+gwzMPjBiIkp3zRiWzk030Mv0XqSUrJrbv/fnHkCc5ifp1PzW5Jrbz23SjSkO1w5dSp8o8zbzLnSk5IhTV7WlSk2r989UjqUj5527yhpP7JtXTHVs3tNWnrVOzNZAT2js8As27QLYAeNpjYGIAg//pDGkM2AArAwMjEyMzAzMjC1t6TmVBhiF7aV6mgYGBC4h2BTIAv3wIjQAAAAABUMicpQAA) format('woff');
 }
 
 /*===============================================================
@@ -1008,6 +1003,7 @@ body {
     left:0;
     top:100%;
   }
+  li:last-child .unit:before{display: none;}
   .unit{
     display: block;
     text-align: center;
@@ -1026,7 +1022,6 @@ body {
       margin-top: -15px;
       right: 0;
     }
-    li:last-child &:before{display: none;}
     &:hover,&:focus,&.active{
       background-color: #c0daec;
       @include singleLink($titleColor);
@@ -1642,6 +1637,20 @@ i{
 /*DIRTY HACKS
 ------------------------------------------------------------------------------------------------*/
 html[xmlns*=""] body:last-child .b-slider { outline: solid;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari and Chrome */
+
+/* Safari only override */
+  ::i-block-chrome,.l-content__mainColumn--3ColumnedLayout,.l-content__aside--right{
+    margin-left: -12px;
+  }
+  ::i-block-chrome,.l-content__mainColumn--3ColumnedLayout{
+    width: 560px;
+    @include respond-to(screen1360){ width: 940px; }
+  }
+  //::i-block-chrome,.b-primeNav > ul{}
+}
 
 //debug grid
 //* { outline: 2px dotted red; }
