@@ -623,7 +623,7 @@ body {
   background-color: #faf7f3;
   @include border-radius;
   border: 3px solid #dad8d3;
-  padding: 20px 80px 20px 40px;
+  padding: 20px 80px 70px 40px;
 }
 .l-content__mainColumn--2ColumnedLayout{
   @extend .l-content__mainColumn;
@@ -1509,7 +1509,8 @@ body {
   &.m-anotherStyling {
     font-family: $baseFontFamily-semibold;
     text-transform: uppercase;
-    background-color: #e0a763;
+    background-color: #f0d8a0;
+    &.current{background-color: #e0a763;}
     .h-vCtr{
       width: inherit;
       text-align: center;

@@ -628,7 +628,7 @@ body { height: 100%; font-size: 16px; line-height: 1.4; }
 
 .l-content__aside--right { width: 200px; background-color: #dad8d3; }
 
-.l-content__mainColumn, .l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout { background-color: #faf7f3; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; border: 3px solid #dad8d3; padding: 20px 80px 20px 40px; }
+.l-content__mainColumn, .l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout { background-color: #faf7f3; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; border: 3px solid #dad8d3; padding: 20px 80px 70px 40px; }
 
 .l-content__mainColumn--2ColumnedLayout { width: 750px; width: -webkit-calc(100% - 200px); width: -moz-calc(100% - 200px); width: calc(100% - 200px); }
 
@@ -948,7 +948,8 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 .b-tabs__nav__unit .h-vCtr { display: table-cell; height: inherit; vertical-align: middle; padding-top: 5px; padding-bottom: 7px; }
 .b-tabs__nav__unit.current { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; background-color: #e0a763; }
 .b-tabs__nav__unit.current:after { top: 100%; left: 50%; margin-left: -15px; border-top: 10px solid #e0a763; border-left: 15px solid transparent; border-right: 15px solid transparent; }
-.b-tabs__nav__unit.m-anotherStyling { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; background-color: #e0a763; }
+.b-tabs__nav__unit.m-anotherStyling { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; background-color: #f0d8a0; }
+.b-tabs__nav__unit.m-anotherStyling.current { background-color: #e0a763; }
 .b-tabs__nav__unit.m-anotherStyling .h-vCtr { width: inherit; text-align: center; }
 .b-tabs__nav__unit.m-anotherStyling:after { display: block; }
 
