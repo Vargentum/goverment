@@ -40,9 +40,18 @@ $(window).load(function(){
     }
     setNewsListHeight();
 
+
+    $('.js-equalize').each(function(){
+        $(this).children().height( $(this).height() );
+    });
+    $(window).resize(function(){
+        $('.l-content--innerPages').height( $('.l-content--innerPages').height() );
+    });
+
+
     /*css-calc fallback*/
     function cssCalc($obj, operator, value){
-        if( $browser.version.opera ){
+        if($.browser.version.opera ){
             $obj.css('width', '100%').css('width', ''+operator+'='+value);
         }
     }
@@ -61,6 +70,8 @@ $(window).load(function(){
             cssCalc($('.b-services__all__searchResults th:first-child, b-services__all__searchResults td:first-child'), '-', '480px');
         }
     });
+
+
 
 
     /*

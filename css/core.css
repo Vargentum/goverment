@@ -618,7 +618,7 @@ body { height: 100%; font-size: 16px; line-height: 1.4; }
 
 .l-body { min-width: 940px; }
 
-.l-content, .l-content--mainPage { background-color: #efe6d6; box-shadow: inset 0 1px 0 #dbdbdb, inset 0 2px 0 #d0d0d0, inset 0 3px 0 #e7e7e7, inset 0 5px 0 #fff; }
+.l-content, .l-content--mainPage { background-color: #efe6d6; }
 
 .l-content--mainPage { padding-top: 30px; padding-bottom: 30px; }
 
@@ -626,9 +626,10 @@ body { height: 100%; font-size: 16px; line-height: 1.4; }
 
 .l-content__aside--left { width: 180px; padding-bottom: 60px; }
 
-.l-content__aside--right { width: 200px; background-color: #dad8d3; }
+.l-content__aside--right { width: 200px; background-color: #dad8d3; position: relative; }
+.l-content__aside--right:before { background-color: #dad8d3; height: 100%; width: 2px; top: 0; right: 100%; }
 
-.l-content__mainColumn, .l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout { background-color: #faf7f3; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; border: 3px solid #dad8d3; padding: 20px 80px 70px 40px; }
+.l-content__mainColumn, .l-content__mainColumn--2ColumnedLayout, .l-content__mainColumn--3ColumnedLayout { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; height: inherit; background-color: #faf7f3; border: 3px solid #dad8d3; padding: 20px 80px 70px 40px; }
 
 .l-content__mainColumn--2ColumnedLayout { width: 750px; width: -webkit-calc(100% - 200px); width: -moz-calc(100% - 200px); width: calc(100% - 200px); }
 
@@ -940,7 +941,8 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 /*SEVICE elements--------------------------------*/
 .b-tabs__nav { margin-bottom: 30px; }
 
-.b-tabs__nav__unit { width: 32%; position: relative; display: inline-block; padding-top: 0; padding-bottom: 0; background-color: transparent; font-size: 14px; text-decoration: none; color: #070707; }
+.b-tabs__nav__unit { width: 32%; position: relative; display: inline-block; background-color: #f0d8a0; padding-top: 0; padding-bottom: 0; font-size: 14px; text-decoration: none; color: #070707; }
+.b-tabs__nav__unit.current { background-color: #e0a763; }
 .b-tabs__nav__unit:visited { color: #070707; }
 .b-tabs__nav__unit:focus { color: #070707; }
 .b-tabs__nav__unit:hover { color: #070707; }
@@ -948,8 +950,7 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 .b-tabs__nav__unit .h-vCtr { display: table-cell; height: inherit; vertical-align: middle; padding-top: 5px; padding-bottom: 7px; }
 .b-tabs__nav__unit.current { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; background-color: #e0a763; }
 .b-tabs__nav__unit.current:after { top: 100%; left: 50%; margin-left: -15px; border-top: 10px solid #e0a763; border-left: 15px solid transparent; border-right: 15px solid transparent; }
-.b-tabs__nav__unit.m-anotherStyling { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; background-color: #f0d8a0; }
-.b-tabs__nav__unit.m-anotherStyling.current { background-color: #e0a763; }
+.b-tabs__nav__unit.m-anotherStyling { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; width: auto; }
 .b-tabs__nav__unit.m-anotherStyling .h-vCtr { width: inherit; text-align: center; }
 .b-tabs__nav__unit.m-anotherStyling:after { display: block; }
 
