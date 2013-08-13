@@ -625,6 +625,7 @@ body {
 }
 .l-content__mainColumn{
   @include border-radius;
+  min-height: 700px;
   height: inherit;
   background-color: #faf7f3;
   border: 3px solid #dad8d3;
@@ -771,11 +772,14 @@ body {
   &:before{
     @extend .pseudo-block;
     background-image: inline-image('navigator-shadow_bottom.png');
-    width:1259px;
+    width:0;
     height: 7px;
     top:100%;
     left:50%;
     margin-left: -630px;
+  }
+  @include respond-to(screen1360){
+    &:before{width: 1259px;}
   }
 }
 .b-navigator__title{
