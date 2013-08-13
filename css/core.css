@@ -541,6 +541,8 @@ a:active { color: #ecb676; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: none; }
 
+.b-typography.b-articlesList ul { list-style-type: none; padding: 0; margin: 0; }
+.b-typography.b-articlesList ul li { margin: 0; }
 .b-typography p { margin-bottom: 20px; }
 .b-typography ul { list-style-type: disc; margin-bottom: 20px; padding-left: 20px; }
 .b-typography ul li { margin-bottom: 20px; }
@@ -572,9 +574,9 @@ DEVELOPER STYLES RUN BELOW THIS POINT
 .placeholder-colors-base ::-moz-placeholder { color: #b1b1b1; }
 .placeholder-colors-base :-ms-input-placeholder { color: #b1b1b1; }
 
-.default-button, input[type="submit"], .b-typography button, .b-tabs__nav__unit { background-color: #e0a763; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; font-size: 16px; color: #070707; padding: 7px 15px 9px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; }
-.default-button:hover, input[type="submit"]:hover, .b-typography button:hover, .b-tabs__nav__unit:hover, .default-button:focus, input[type="submit"]:focus, .b-typography button:focus, .b-tabs__nav__unit:focus { background-color: #e68e25; }
-.default-button:active, input[type="submit"]:active, .b-typography button:active, .b-tabs__nav__unit:active { background-color: #ecb676; }
+.default-button, input[type="submit"], .b-tabs__nav__unit { background-color: #e0a763; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; font-size: 16px; color: #070707; padding: 7px 15px 9px; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; }
+.default-button:hover, input[type="submit"]:hover, .b-tabs__nav__unit:hover, .default-button:focus, input[type="submit"]:focus, .b-tabs__nav__unit:focus { background-color: #e68e25; }
+.default-button:active, input[type="submit"]:active, .b-tabs__nav__unit:active { background-color: #ecb676; }
 
 .obj-blank_example { display: inline-block; margin: 35px 0; padding-left: 35px; text-decoration: none; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAFZklEQVRIx7VVW2xUVRRdM/fO4857Op0y7+m0tAWlEKgWUqLYEMRoLNEoKIgRI0YwfmiMRmNM/NCofBj9oCbGRDGQ6BfEQlRieIlIkUfkZUttYUpLXzN37sx0nndm3OdMKS/jh4knc+45mbvP2vusvfa+Gtw2Pu4+/JjXbXnG47a26/WCHRXQjx7Q3GZZ4U+NRoNSGVBhxiubH32670Lv3usW4vXNtu7DdbVO066Oe8MrbTYjNFotMrkif6clAPpxIK32xp6tpVIFc2otSCSBeCJtv9k9B9/2+RFH2Gc/3fXgfN+4nMXFoTjS0wW4ayQIBFYollGk8EozUyXAcrnMgZNk19YagMVgxeTohSt3gNfYpR8Z8Om+SZzrm4BkFGGWdFi20D9rWCozUJpqFbxYKqFI+3y+BIlsVTWDnd/tfn/9k2vOxpTUyVqH7Svxo+2HHunsiLQPjiRxpPcKXdFMV8zBYtLdwjCjw6AVYdDhHwfdAwS8grYr9nzfw26wQ4wEnC9Jkh77fuqHIGiRTOcRS2TRXO/kh34+ehkXB2J49okFmIpnIJPjSMiB306OIOC1wk3BZLIFOHieNKixSJhOp6J0VNCGA45lE3RocDiGQkFFOlMkBwVYzAYOfvT3q9wZU8tzr/VgYEiGksxj69v7kCK77q9PYNW6b9DauR09+/v5GSWRSNBSFA160ZrK5AmwSgWXFvFpt1TBbbTOa3LhwK+XKcl5hAN2/HBgAG++vBzL24KY2+DE+sdbMTqWgttl5mcIW+FUkoYLJUpMLq/SLFHkBa4Qt8vEDc1mHXbtPg+DXsCmtYvwyRfHMUk33bKhDWOxaXzw2S/4cucpnDk3BrvNMBO5rMxIWMOzn82p3EFqugirxQiXQ+KGg9EEPG4LHlrRiOHRJEYowhc3LOHvDAYBbQu90FKuTpwZwfhUhv8fj8c5uKglLpm8coUS5zVN4KagjhcOGyGvDWtWN806emNrBzwuC3JFFTE5g/qgA/ctDcNhN0Kvr0opIVcjFxlGpVLheo0nchi4oqD9Jn1v2bhkdr/j0y6YZrRo1Ikk2Tze+fAAkqkc6mpN2Nn9FMw6AUlFqYILgobKXMX4ZBaSwUgRC2iqd3GAE39cw64951FH/NusBjSQBJm9mRLvckoI++3Y/+1G5EllCklUov/TxABhJ6oVSpGraoV4E0h+RoiiHkGigo1I0I7l9wQwSYkbHk3h1NlrfK9QpDkKiN3YLIlUvRV0rW7B65s7MKFkCZx1GgKv0AsdXcUsGXgRsQr1z7FUE0M0Lb7bQ1EaqSVQHrRUidQMp0lRspLD6HgKQ8MyjvZGSfN5fiapJLKznJNzDqrXszYjwDvHRr2mKqmDx6I4dDxKdAm8celFDUzUR+ooAC8F4PdYsXiBF6vub6RbV3MxMTGlFAoFeZZzJsPJeBaCKKF9kXE2gZvWLsS6rvmYiGUoJ2mMUKTRqwqpRsaxk8NEUQYJoqH/4hjefWsl3nu1E7IcY5TM0AJB39YaxPo1GTisFjyw9IZSdCRUVqlsNoWdtzQqlVpVgqiZjE/jAnVTH/UZTuVULEVLloMPDmcNC+ZZ8TyVMCuier8R/zYKZfaBUPmHwkH01dpNmB9xc2dsyLLMwHk1iVtfeLiTupqVSl4lXktOm0HncprvCoWC4cbGuTWRhkgdrZ6m5mafz+d36olGaMU7nBbLWlaRTIaMkhwHjw6dO3izUXwc+AvY29t7XDPzMWHdqEan0/lDoVAgFA77I5GGUH0k4qPpDYXrPYFA0F3npeySKMrlUvk6lgb/fTB5sIJwS5Lk9QcC/paWluZLlwam+vv+3MG6AP6H4aDJs/s3vxRN7C7WQLkAAAAASUVORK5CIIA=") 0 50% no-repeat; }
 
@@ -897,7 +899,7 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 .b-asideLeft__nav__title { font: 20px/1.2 "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; color: #1a1a18; margin-bottom: 15px; padding-left: 10px; }
 
 .b-asideRight__nav { background-color: #faf7f3; -webkit-border-radius: 0 10px 10px 0; -moz-border-radius: 0 10px 10px 0; -ms-border-radius: 0 10px 10px 0; -o-border-radius: 0 10px 10px 0; border-radius: 0 10px 10px 0; padding: 20px 10px; position: relative; }
-.b-asideRight__nav:before { width: 3px; background-color: #faf7f3; height: 100%; right: 100%; top: 0; }
+.b-asideRight__nav:before { width: 5px; background-color: #faf7f3; height: 100%; right: 100%; top: 0; }
 .b-asideRight__nav li { margin-bottom: 15px; }
 
 .b-crumbs { margin-bottom: 20px; }
@@ -943,13 +945,13 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 .b-tabs__nav { margin-bottom: 30px; }
 
 .b-tabs__nav__unit { width: 32%; position: relative; display: inline-block; background-color: #f0d8a0; padding-top: 0; padding-bottom: 0; font-size: 14px; text-decoration: none; color: #070707; }
-.b-tabs__nav__unit.current { background-color: #e0a763; }
 .b-tabs__nav__unit:visited { color: #070707; }
 .b-tabs__nav__unit:focus { color: #070707; }
 .b-tabs__nav__unit:hover { color: #070707; }
 .b-tabs__nav__unit:active { color: #070707; }
 .b-tabs__nav__unit .h-vCtr { display: table-cell; height: inherit; vertical-align: middle; padding-top: 5px; padding-bottom: 7px; }
-.b-tabs__nav__unit.current { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; background-color: #e0a763; }
+.b-tabs__nav__unit:focus { outline: none; }
+.b-tabs__nav__unit.current { text-shadow: 0 1px 0 #070707; background-color: #e0a763; }
 .b-tabs__nav__unit.current:after { top: 100%; left: 50%; margin-left: -15px; border-top: 10px solid #e0a763; border-left: 15px solid transparent; border-right: 15px solid transparent; }
 .b-tabs__nav__unit.m-anotherStyling { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase; width: auto; }
 .b-tabs__nav__unit.m-anotherStyling .h-vCtr { width: inherit; text-align: center; }
