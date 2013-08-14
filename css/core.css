@@ -461,7 +461,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .input-reset { background-color: transparent; border: none; }
 .input-reset:hover, .input-reset:focus { outline: none; }
 
-.text-hide, .page-header__search .button, .b-footer__links__unit, .b-footer__links__unit-1, .b-footer__links__unit-2, .b-footer__links__unit-3, .b-footer__links__unit-4, .b-services__all__searchResults .text-hide { font: 0/0 serif; text-shadow: none; color: transparent; }
+.text-hide, .page-header__search .button, .b-footer__links__unit, .b-footer__links__unit-1, .b-footer__links__unit-2, .b-footer__links__unit-3, .b-footer__links__unit-4, .b-services__all__searchResults .text-hide, .b-typography .b-services__all__searchResults .text-hide { font: 0/0 serif; text-shadow: none; color: transparent; }
 
 :root .gradient, :root .ie9-gradient-support, :root .selectBox-dropdown, :root textarea, :root input[type="text"], :root input[type="password"], :root input[type="datetime"], :root input[type="datetime-local"], :root input[type="date"], :root input[type="month"], :root input[type="time"], :root input[type="week"], :root input[type="number"], :root input[type="email"], :root input[type="url"], :root input[type="search"], :root input[type="tel"], :root .b-navigator, :root .b-navigator__submitButton, :root .b-slider .camera_wrap:before, .b-slider :root .camera_wrap:before, :root .b-slider .camera_wrap:after, .b-slider :root .camera_wrap:after { filter: none \0/IE9; }
 
@@ -556,7 +556,7 @@ a:active, a:hover { outline: none; }
 .b-typography b, .b-typography strong { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
 .b-typography dt { font-family: "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
 .b-typography dd { margin-bottom: 20px; }
-.b-typography table { width: 100%; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; border: 1px solid #aeaeae; }
+.b-typography table { width: 100%; border: 1px solid #aeaeae; }
 .b-typography table th, .b-typography table td { text-align: center; border: 1px solid #aeaeae; background-color: #fff; padding: 10px; }
 .b-typography table tr:nth-child(odd) td { background-color: #ebebeb; }
 .b-typography table td:hover { background-color: #f9d9a0 !important; }
@@ -969,14 +969,15 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 
 .b-services__all__filter__list li { margin: 3px 0; }
 
-.b-services__all__searchResults { margin: 25px 0; width: 100%; }
-.b-services__all__searchResults i { margin: 0 2px; }
-.b-services__all__searchResults th { border-bottom: 1px solid #bfbebc; padding-bottom: 5px; }
-.b-services__all__searchResults td { padding: 10px 0; }
-.b-services__all__searchResults th, .b-services__all__searchResults td { text-align: center; font: 20px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-.b-services__all__searchResults th:first-child, .b-services__all__searchResults td:first-child { font: 14px "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-align: left; width: 380px; width: -webkit-calc(100% - 100px); width: -moz-calc(100% - 100px); width: calc(100% - 100px); }
-.b-services__all__searchResults th.title { font: 22px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-.b-services__all__searchResults tr:nth-child(even) td { background-color: #ececec; }
+.b-services__all__searchResults, .b-typography .b-services__all__searchResults { margin: 25px 0; width: 100%; border: none; }
+.b-services__all__searchResults i, .b-typography .b-services__all__searchResults i { margin: 0 2px; }
+.b-services__all__searchResults th, .b-typography .b-services__all__searchResults th { border: none; border-bottom: 1px solid #bfbebc; padding: 0 0 5px; }
+.b-services__all__searchResults td, .b-typography .b-services__all__searchResults td { border: none; padding: 10px 0; }
+.b-services__all__searchResults th, .b-services__all__searchResults td, .b-typography .b-services__all__searchResults th, .b-typography .b-services__all__searchResults td { text-align: center; font: 20px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
+.b-services__all__searchResults th, .b-services__all__searchResults th:hover, .b-services__all__searchResults td, .b-services__all__searchResults td:hover, .b-typography .b-services__all__searchResults th, .b-typography .b-services__all__searchResults th:hover, .b-typography .b-services__all__searchResults td, .b-typography .b-services__all__searchResults td:hover { background-color: transparent !important; }
+.b-services__all__searchResults th:first-child, .b-services__all__searchResults td:first-child, .b-typography .b-services__all__searchResults th:first-child, .b-typography .b-services__all__searchResults td:first-child { font: 14px "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-align: left; width: 380px; width: -webkit-calc(100% - 100px); width: -moz-calc(100% - 100px); width: calc(100% - 100px); }
+.b-services__all__searchResults th.title, .b-typography .b-services__all__searchResults th.title { font: 22px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
+.b-services__all__searchResults tr:nth-child(even) td, .b-services__all__searchResults tr:nth-child(even) td:hover, .b-typography .b-services__all__searchResults tr:nth-child(even) td, .b-typography .b-services__all__searchResults tr:nth-child(even) td:hover { background-color: #ececec !important; }
 
 /*GALLERY elements--------------------------------*/
 .b-gallery { margin: 20px 0 40px; }
