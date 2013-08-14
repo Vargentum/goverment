@@ -541,8 +541,6 @@ a:active { color: #ecb676; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: none; }
 
-.b-typography.b-articlesList ul { list-style-type: none; padding: 0; margin: 0; }
-.b-typography.b-articlesList ul li { margin: 0; }
 .b-typography p { margin-bottom: 20px; }
 .b-typography ul { list-style-type: disc; margin-bottom: 20px; padding-left: 20px; }
 .b-typography ul li { margin-bottom: 20px; }
@@ -919,6 +917,8 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 
 /*ARTICLE page elements--------------------------------*/
 .b-article__time { font-size: 14px; color: #868685; margin-bottom: 10px; }
+
+.b-typography .b-articlesList { list-style-type: none; padding: 0; margin: 0; }
 
 .b-articlesList__unit { margin-bottom: 40px; }
 

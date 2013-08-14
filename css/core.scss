@@ -395,14 +395,6 @@ a{
   //&:hover,&:focus{text-decoration: none;}
 }
 .b-typography{
-  &.b-articlesList {
-    ul{
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      li{margin: 0;}
-    }
-  }
   p{margin-bottom: $paragraphSpace;}
   ul{
     list-style-type: disc;
@@ -1428,7 +1420,13 @@ body {
   margin-bottom: 10px;
 }
 
-.b-articlesList{}
+.b-articlesList{
+  .b-typography &{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
 .b-articlesList__unit{
   margin-bottom: 40px;
 }
