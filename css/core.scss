@@ -1590,7 +1590,13 @@ body {
     tr:nth-child(even){
       td{
         &,&:hover{background-color: #ececec !important;}
-        @extend .h-emulatePaddings;
+        &:first-child{
+          @extend .h-emulatePaddings;
+          &:after{
+            left: auto;
+            right: -109px;
+          }
+        }
       }
     }
   }
@@ -1653,6 +1659,16 @@ i{
 /*DIRTY HACKS
 ------------------------------------------------------------------------------------------------*/
 html[xmlns*=""] body:last-child .b-slider { outline: solid;}
+
+//FF special
+@-moz-document url-prefix() {
+  .b-services__all__searchResults{
+    th, td{
+      &:before,
+      &:after{display: none !important;}
+     }
+  }
+}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 /* Safari and Chrome */
