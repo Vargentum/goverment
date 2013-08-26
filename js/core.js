@@ -26,6 +26,7 @@ $(window).load(function(){
     $('.l-content__aside--right').css('paddingTop', paddingForRightColumn);
 
 
+
     /*set color to all inputs*/
     $('input').parent().addClass('placeholder-colors-base');
 
