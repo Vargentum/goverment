@@ -395,7 +395,10 @@ a{
   //&:hover,&:focus{text-decoration: none;}
 }
 .b-typography{
-  p{margin-bottom: $paragraphSpace;}
+  p{
+    margin-bottom: $paragraphSpace;
+    text-align: justify;
+  }
   ul{
     list-style-type: disc;
     margin-bottom:$paragraphSpace;
@@ -1599,13 +1602,13 @@ body {
     tr:nth-child(even){
       td{
         &,&:hover{background-color: #ececec !important;}
-        &:first-child{
-          @extend .h-emulatePaddings;
-          &:after{
-            left: auto;
-            right: -109px;
-          }
-        }
+    //    &:first-child{
+    //      @extend .h-emulatePaddings;
+    //      &:after{
+    //        left: auto;
+    //        right: -109px;
+    //      }
+    //    }
       }
     }
   }
