@@ -1583,7 +1583,7 @@ body {
       padding: 10px 0;
     }
     th,td{
-      &,&:hover{background-color: transparent !important;}
+      background-color: transparent !important;
       text-align: center;
       font: 20px $baseFontFamily-semibold;
       &:first-child{
@@ -1601,7 +1601,7 @@ body {
     .text-hide{@extend .text-hide;}
     tr:nth-child(even){
       td{
-        &,&:hover{background-color: #ececec !important;}
+        background-color: #ececec !important;
     //    &:first-child{
     //      @extend .h-emulatePaddings;
     //      &:after{
@@ -1610,6 +1610,9 @@ body {
     //      }
     //    }
       }
+    }
+    tr:hover td{
+      background-color: $attentionColor !important;
     }
   }
 }

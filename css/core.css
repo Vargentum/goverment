@@ -974,11 +974,11 @@ li:nth-child(2) .b-service_ways__list__unit, li:nth-child(2) .b-service_ways__li
 .b-services__all__searchResults i, .b-typography .b-services__all__searchResults i { margin: 0 2px; }
 .b-services__all__searchResults th, .b-typography .b-services__all__searchResults th { border: none; border-bottom: 1px solid #bfbebc; padding: 0 0 5px; }
 .b-services__all__searchResults td, .b-typography .b-services__all__searchResults td { border: none; padding: 10px 0; }
-.b-services__all__searchResults th, .b-services__all__searchResults td, .b-typography .b-services__all__searchResults th, .b-typography .b-services__all__searchResults td { text-align: center; font: 20px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-.b-services__all__searchResults th, .b-services__all__searchResults th:hover, .b-services__all__searchResults td, .b-services__all__searchResults td:hover, .b-typography .b-services__all__searchResults th, .b-typography .b-services__all__searchResults th:hover, .b-typography .b-services__all__searchResults td, .b-typography .b-services__all__searchResults td:hover { background-color: transparent !important; }
+.b-services__all__searchResults th, .b-services__all__searchResults td, .b-typography .b-services__all__searchResults th, .b-typography .b-services__all__searchResults td { background-color: transparent !important; text-align: center; font: 20px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
 .b-services__all__searchResults th:first-child, .b-services__all__searchResults td:first-child, .b-typography .b-services__all__searchResults th:first-child, .b-typography .b-services__all__searchResults td:first-child { font: 14px "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; text-align: left; width: 380px; width: -webkit-calc(100% - 100px); width: -moz-calc(100% - 100px); width: calc(100% - 100px); }
 .b-services__all__searchResults th.title, .b-typography .b-services__all__searchResults th.title { font: 22px "Segoe UI Semibold", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-.b-services__all__searchResults tr:nth-child(even) td, .b-services__all__searchResults tr:nth-child(even) td:hover, .b-typography .b-services__all__searchResults tr:nth-child(even) td, .b-typography .b-services__all__searchResults tr:nth-child(even) td:hover { background-color: #ececec !important; }
+.b-services__all__searchResults tr:nth-child(even) td, .b-typography .b-services__all__searchResults tr:nth-child(even) td { background-color: #ececec !important; }
+.b-services__all__searchResults tr:hover td, .b-typography .b-services__all__searchResults tr:hover td { background-color: #e68e25 !important; }
 
 /*GALLERY elements--------------------------------*/
 .b-gallery { margin: 20px 0 40px; }
